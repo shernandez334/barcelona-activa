@@ -1,4 +1,4 @@
-package cat.itacademy.s04.t01.n01.controller;
+package cat.itacademy.s04.t01.n02.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -10,7 +10,7 @@ public class HelloWorldController {
 
     @GetMapping("/HelloWorld")
     public String greeting(@RequestParam(defaultValue = "UNKNOWN") String name){
-        return "Hello " + name + ". You are executing a Maven Project.";
+        return "Hello " + name + ". You are executing a Gradle Project.";
     }
 
     @GetMapping({"/HelloWorld2", "/HelloWorld2/{name}"})
@@ -18,6 +18,6 @@ public class HelloWorldController {
         if (name == null){
             name = "minombre";
         }
-        return "Hello " + name + ". You are executing a Maven Project.";
+        return "Hello " + name + ". You are executing a Gradle Project.";
     }
 }
