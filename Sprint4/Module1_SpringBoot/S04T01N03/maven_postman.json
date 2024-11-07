@@ -1,0 +1,19 @@
+{
+	"id": "a1171b1b-9d06-46b0-8803-8b7c4f99734a",
+	"name": "Environment",
+	"values": [
+		{
+			"key": "Gradle",
+			"value": "http://localhost:9001",
+			"enabled": false
+		},
+		{
+			"key": "Maven",
+			"value": "http://localhost:9000/",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2024-11-07T20:20:04.478Z",
+	"_postman_exported_using": "Postman/11.18.4"
+}
