@@ -10,6 +10,10 @@ public class Main {
     public static void main(String[] args) {
         Pizza hawaiianPizza = new PizzaMeister(new HawaiianPizzaBuilder())
                 .preparePizza(Size.SMALL, Dough.CRUSTY);
-        System.out.println(hawaiianPizza);
+        System.out.println("\nHawaiian Pizza: \n" + hawaiianPizza);
+
+        Pizza meatPizza = new PizzaMeister(new MeatPizzaBuilder())
+                .preparePizza(Size.LARGE, Dough.THIN);
+        System.out.println("\nMeat Pizza: \n" + meatPizza);
     }
 }
