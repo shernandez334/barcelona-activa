@@ -4,7 +4,6 @@ public class Main {
     public static void main(String[] args){
         BlackRock blackRock = new BlackRock();
 
-
         blackRock.registerAgency(new StockAgency("Stock Exchange of New York"));
         blackRock.registerAgency(new StockAgency("Stock Exchange of Barcelona"));
         blackRock.registerAgency(new StockAgency("Stock Exchange of Madrid"));
