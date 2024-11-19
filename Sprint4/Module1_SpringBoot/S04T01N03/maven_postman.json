@@ -3,11 +3,6 @@
 	"name": "Environment",
 	"values": [
 		{
-			"key": "Gradle",
-			"value": "http://localhost:9001",
-			"enabled": false
-		},
-		{
 			"key": "Maven",
 			"value": "http://localhost:9000/",
 			"enabled": true
