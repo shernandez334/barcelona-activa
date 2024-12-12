@@ -11,6 +11,8 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.*;
 
@@ -47,6 +49,12 @@ public class PlayerControllerTest {
     }
 
     @Test
+    void testChangePlayerNameInGame(){
+        Long playerId = 1L;
+        String newPlayerName = "NewPlayerName";
 
-
+        when(playerService.changePlayerName(playerId, newPlayerName)).thenReturn(Mono.empty());
+        Mono<String> result = playerController.changePlayerNameInGame(playerId, newPlayerName);
+        verify(playerService, times(1)).changePlayerName(playerId, newPlayerName);
+    }
 }
