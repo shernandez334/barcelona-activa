@@ -9,7 +9,6 @@ public class FruitModel {
 
     @Id
     private ObjectId id;
-
     private String name;
     private double kgAmount;
 

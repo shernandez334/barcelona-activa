@@ -10,7 +10,15 @@
         <option value="$PROJECT_DIR$/Sprint4/Module2_ApiRest/S04T02N01/pom.xml" />
         <option value="$PROJECT_DIR$/Sprint4/Module2_ApiRest/S04T02N02/pom.xml" />
         <option value="$PROJECT_DIR$/Sprint4/Module2_ApiRest/S04T02N03/pom.xml" />
+        <option value="$PROJECT_DIR$/sprint5/src/main/java/S05T01/pom.xml" />
+        <option value="$PROJECT_DIR$/sprint5/S05T01/pom.xml" />
+        <option value="$PROJECT_DIR$/sprint5/S05T01_Blackjack/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/sprint5/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_X" default="true" project-jdk-name="openjdk-23" project-jdk-type="JavaSDK">

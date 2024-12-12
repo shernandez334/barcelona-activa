@@ -3,8 +3,6 @@ package cat.itacademy.s04.t02.n03.service;
 import cat.itacademy.s04.t02.n03.exception.NoFruitFoundException;
 import cat.itacademy.s04.t02.n03.model.FruitModel;
 import cat.itacademy.s04.t02.n03.repository.FruitRepository;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,8 +10,6 @@ import java.util.ArrayList;
 
 @Service
 public class FruitService {
-    private static final Logger LOGGER = LoggerFactory.getLogger(FruitService.class);
-
     @Autowired
     FruitRepository fruitRepository;
 
