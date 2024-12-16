@@ -22,6 +22,9 @@ public class Player {
     public int getPoints(){
         return this.points;
     }
+    public String getPlayer_name(){
+        return this.player_name;
+    }
 
     public void setName(String name) {
         this.player_name = name;
