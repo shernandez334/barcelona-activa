@@ -32,10 +32,6 @@ public class GameService {
                  game.addPlayer(savedPlayer);
                  return gameRepository.save(game)
                          .map(savedGame -> "Game created successfully with Game ID: " + savedGame.getId());
-              })
-              .onErrorResume(e -> {
-                 System.err.println("Failed to create game or player: " + e.getMessage());
-                 return Mono.just("Failed to create game: " + e.getMessage());
               });
    }
 
