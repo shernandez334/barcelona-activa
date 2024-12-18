@@ -38,7 +38,6 @@ public class BlackjackLogic {
         String resultAfterHitting;
         if (playerHandValue > 21){
             resultAfterHitting = "Busted";
-           game.getPlayerHand().clear();
         } else {
             resultAfterHitting = "Stand or Hit?";
         }
@@ -51,7 +50,6 @@ public class BlackjackLogic {
         int playerHandValue = cardUtils.countHandValue(game, PlayerType.PLAYER);
         int croupierCardValue = cardUtils.countHandValue(game, PlayerType.CROUPIER);
         String gameResult;
-        String playersHand;
         while (playerHandValue > croupierCardValue && croupierCardValue < 21){
             cardUtils.addCardToDeck(game, PlayerType.CROUPIER);
             croupierCardValue = cardUtils.countHandValue(game, PlayerType.CROUPIER);
@@ -63,10 +61,9 @@ public class BlackjackLogic {
         } else {
             cardUtils.addPointToPlayer(game);
             gameResult = "You win." + "\n"
-                    + "Points: " +game.getPlayers().get(0).getPoints();
+                    + "Points: " + game.getPlayers().get(0).getPoints();
         }
-        playersHand = cardUtils.showCardsInHand(game, PlayerType.PLAYER) + cardUtils.showCardsInHand(game, PlayerType.CROUPIER);
-        cardUtils.clearDecks(game);
+        String playersHand = cardUtils.showCardsInHand(game, PlayerType.PLAYER) + cardUtils.showCardsInHand(game, PlayerType.CROUPIER);
         return Mono.just( playersHand + gameResult);
     }
 }

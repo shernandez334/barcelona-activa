@@ -14,11 +14,10 @@ public class Game {
     private String id;
     private List<Player> players = new ArrayList<>();
     private List<Card> playerHand = new ArrayList<>();
-    private List<Croupier> croupier = new ArrayList<>();
     private List<Card> croupierHand = new ArrayList<>();
 
     public Game(){
-        this.croupier.add(new Croupier());
+
     }
 
     public String getId(){

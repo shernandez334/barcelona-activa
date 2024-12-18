@@ -3,6 +3,7 @@ package cat.itacademy.s05.t01.services;
 import cat.itacademy.s05.t01.model.Player;
 import cat.itacademy.s05.t01.repository.GameRepository;
 import cat.itacademy.s05.t01.repository.PlayerRepository;
+import cat.itacademy.s05.t01.services.interfaces.IPlayerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,7 +13,7 @@ import reactor.core.publisher.Mono;
 import java.util.Comparator;
 
 @Service
-public class PlayerService {
+public class PlayerService implements IPlayerService {
 
     private final PlayerRepository playerRepository;
     private final GameRepository gameRepository;
@@ -39,7 +40,7 @@ public class PlayerService {
                  .switchIfEmpty(Mono.error(new RuntimeException("Player with ID " + playerId + " not found.")));
      }
 
-    private Mono<Void> updatePlayerNameInGames(Long playerId, String newPlayerName) {
+    public Mono<Void> updatePlayerNameInGames(Long playerId, String newPlayerName) {
         return gameRepository.findAll()
                 .filter(game -> game.getPlayers().stream()
                         .anyMatch(player -> player.getPlayer_id().equals(playerId)))
