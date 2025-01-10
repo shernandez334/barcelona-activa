@@ -10,7 +10,6 @@
     <packaging>pom</packaging>
     <modules>
         <module>Sprint3</module>
-        <module>Sprint1</module>
     </modules>
 
     <properties>

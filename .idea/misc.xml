@@ -15,16 +15,19 @@
         <option value="$PROJECT_DIR$/sprint5/S05T01_Blackjack/pom.xml" />
         <option value="$PROJECT_DIR$/Sprint5/S05T02_Tamagochi/pom.xml" />
         <option value="$PROJECT_DIR$/Sprint5/S05T02_Tamagotchi/pom.xml" />
+        <option value="$PROJECT_DIR$/Sprint5/Tamgochi/pom.xml" />
+        <option value="$PROJECT_DIR$/Sprint5/S05T02/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/Sprint1/pom.xml" />
         <option value="$PROJECT_DIR$/Sprint5/S05T02_Tamagotchi/pom.xml" />
         <option value="$PROJECT_DIR$/sprint5/pom.xml" />
       </set>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_X" default="true" project-jdk-name="openjdk-23" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_23" default="true" project-jdk-name="openjdk-23" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
